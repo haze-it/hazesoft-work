@@ -1,19 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as ReactDOM from 'react-dom';
-
-interface Props {
-  name: string;
-}
+import Routes from './routes';
 
 const App: React.FC = () => {
   return (
     <React.Fragment>
-      <h3>
-        hazesoft
-      </h3>
+      <Routes />
     </React.Fragment>
   );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
